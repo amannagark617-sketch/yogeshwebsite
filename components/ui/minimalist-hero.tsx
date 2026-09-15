@@ -47,7 +47,7 @@ export function MinimalistHero({
   className,
 }: MinimalistHeroProps) {
   return (
-    <section className={cn("border-t border-border bg-background py-20 lg:py-28", className)}>
+    <section className={cn("border-t border-border bg-background py-16 lg:py-28", className)}>
       {showNav && (
         <div className="container mb-14 flex flex-wrap items-center justify-between gap-6 border-b border-border pb-6">
           <span className="font-display text-lg font-semibold tracking-tight">{logoText}</span>
@@ -117,10 +117,16 @@ export function MinimalistHero({
               <div
                 role="img"
                 aria-label={imageAlt}
-                className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-secondary"
+                className="absolute inset-0 flex flex-col items-center justify-center gap-3 overflow-hidden bg-secondary bg-dot-grid"
               >
-                <User size={40} strokeWidth={1.25} className="text-foreground/25" />
-                <span className="rounded-full border border-border bg-card px-3 py-1 font-mono text-[10.5px] uppercase tracking-wide text-muted-foreground">
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 flex items-center justify-center font-display text-[9rem] font-semibold leading-none text-foreground/[0.06] sm:text-[11rem]"
+                >
+                  YR
+                </span>
+                <User size={40} strokeWidth={1.25} className="relative text-foreground/30" />
+                <span className="relative rounded-full border border-border bg-card px-3 py-1 font-mono text-[10.5px] uppercase tracking-wide text-muted-foreground">
                   Portrait coming soon
                 </span>
               </div>

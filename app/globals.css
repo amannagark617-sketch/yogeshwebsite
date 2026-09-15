@@ -4,12 +4,15 @@
 
 /*
   Design tokens — "studio desk" palette.
-  Paper-toned, single theme by deliberate choice: no dark mode,
-  no yellow/orange anywhere. Primary accent is a deep studio emerald.
+  Cool stone neutrals (not warm cream — that reads as a generic AI-template
+  default), single theme by deliberate choice: no dark mode, no
+  yellow/orange anywhere. Background hue is tuned to match the ink's own
+  cool cast so the whole neutral system feels like one considered choice
+  rather than a beige default. Primary accent is a deep studio emerald.
 */
 @layer base {
   :root {
-    --background: 48 20% 95%;         /* #F5F4F0 paper */
+    --background: 210 10% 95%;        /* #F1F2F4 cool stone */
     --foreground: 210 8% 9%;          /* #16181A ink */
 
     --card: 0 0% 100%;                /* #FFFFFF raised surface */
@@ -19,19 +22,19 @@
     --popover-foreground: 210 8% 9%;
 
     --primary: 168 78% 25%;           /* #0E6F5C emerald */
-    --primary-foreground: 48 20% 95%;
+    --primary-foreground: 210 10% 95%;
 
-    --secondary: 44 6% 87%;           /* #E3E0D8 sunken — more tonal separation from paper */
+    --secondary: 210 10% 89%;         /* #E0E3E6 sunken — more tonal separation from paper */
     --secondary-foreground: 210 8% 9%;
 
-    --muted: 44 6% 87%;
+    --muted: 210 10% 89%;
     --muted-foreground: 206 4% 36%;   /* #595D60 ink-dim */
 
-    --accent: 164 5% 92%;             /* #E4EFEC emerald-tinted hover */
+    --accent: 172 12% 91%;            /* emerald-tinted hover, cooled to match */
     --accent-foreground: 210 8% 9%;
 
     --destructive: 358 66% 45%;
-    --destructive-foreground: 48 20% 95%;
+    --destructive-foreground: 210 10% 95%;
 
     --border: 220 9% 83%;
     --input: 220 9% 83%;
