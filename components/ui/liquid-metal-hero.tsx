@@ -64,7 +64,7 @@ export default function LiquidMetalHero({
   };
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background pt-28 pb-16 sm:pt-24">
       <LiquidMetal
         style={{ position: "absolute", inset: 0, zIndex: 0 }}
         colorBack={SHADER_COLOR_BACK}
