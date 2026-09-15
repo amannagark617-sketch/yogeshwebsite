@@ -4,7 +4,7 @@ import { Reveal } from "@/components/reveal";
 const PROJECTS = [
   {
     frame: "FRAME 01 — BRAND",
-    swatch: "#7A2048",
+    swatch: "#104C47",
     tag: "Kiyo Stays — Hospitality",
     title: "Kiyo Stays",
     description:
@@ -13,7 +13,7 @@ const PROJECTS = [
   },
   {
     frame: "FRAME 02 — PRODUCT",
-    swatch: "#26408B",
+    swatch: "#20626F",
     tag: "Buildway — SaaS UI/UX",
     title: "Buildway Product Platform",
     description:
@@ -31,7 +31,7 @@ const PROJECTS = [
   },
   {
     frame: "FRAME 04 — STUDIO",
-    swatch: "#4B3F72",
+    swatch: "#3A8867",
     tag: "Design Solution — Freelance",
     title: "Design Solution Studio",
     description:

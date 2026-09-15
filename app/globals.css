@@ -21,10 +21,10 @@
     --primary: 168 78% 25%;           /* #0E6F5C emerald */
     --primary-foreground: 48 20% 95%;
 
-    --secondary: 45 4% 91%;           /* #EBE9E3 sunken */
+    --secondary: 44 6% 87%;           /* #E3E0D8 sunken — more tonal separation from paper */
     --secondary-foreground: 210 8% 9%;
 
-    --muted: 45 4% 91%;
+    --muted: 44 6% 87%;
     --muted-foreground: 206 4% 36%;   /* #595D60 ink-dim */
 
     --accent: 164 5% 92%;             /* #E4EFEC emerald-tinted hover */
