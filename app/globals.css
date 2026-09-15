@@ -58,6 +58,10 @@
   h1, h2, h3 {
     text-wrap: balance;
   }
+  /* keep anchor-jumped sections clear of the fixed header (~72px) */
+  #top, #work, #about, #experience, #skills, #contact {
+    scroll-margin-top: 96px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
