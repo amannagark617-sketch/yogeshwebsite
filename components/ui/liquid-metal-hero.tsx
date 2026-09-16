@@ -23,7 +23,7 @@ interface LiquidMetalHeroProps {
   several ship with warm/amber tones that would break the "no orange or
   yellow" rule for this project.
 */
-const SHADER_COLOR_BACK = "#f5f4f0"; // --background / paper
+const SHADER_COLOR_BACK = "#ffffff"; // --background
 const SHADER_COLOR_TINT = "#0e6f5c"; // --primary / studio emerald
 
 export default function LiquidMetalHero({
@@ -64,7 +64,11 @@ export default function LiquidMetalHero({
   };
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background pt-28 pb-16 sm:pt-24">
+    // Deliberately NOT centered with min-h-screen + items-center: that combination
+    // made the title's position depend on exact viewport height, so it rendered
+    // under the fixed header at some window sizes/zoom levels. Top-anchored flow
+    // with generous, fixed padding is immune to that regardless of viewport height.
+    <section className="relative overflow-hidden bg-background pb-20 pt-36 sm:pt-40 lg:pb-28 lg:pt-44">
       <LiquidMetal
         style={{ position: "absolute", inset: 0, zIndex: 0 }}
         colorBack={SHADER_COLOR_BACK}
